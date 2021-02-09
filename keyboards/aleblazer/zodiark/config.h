@@ -25,7 +25,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    Aleblazer
 #define PRODUCT         Zodiark
-
+#define DESCRIPTION     68 key split keyboard
 
 #define MASTER_LEFT
 

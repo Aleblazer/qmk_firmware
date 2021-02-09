@@ -20,8 +20,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "config_common.h"
 
 /* USB Device descriptor parameter */
-#define VENDOR_ID       0xFEEF
-#define PRODUCT_ID      0x6061
+#define VENDOR_ID       0xF901
+#define PRODUCT_ID      0xF903
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    Aleblazer
 #define PRODUCT         MigitePad
