@@ -1,5 +1,4 @@
-/*
-Copyright 2011 Jun Wako <wakojun@gmail.com>
+/* Copyright 2021 Danny Nguyen <danny@keeb.io>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -13,31 +12,15 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-Ported to QMK by Peter Roe <pete@13bit.me>
 */
 
-#ifndef LED_H
-#define LED_H
-#include <stdint.h>
+#include "rev1.h"
 
-
-/* keyboard LEDs */
-#define USB_LED_NUM_LOCK                0
-#define USB_LED_CAPS_LOCK               1
-#define USB_LED_SCROLL_LOCK             2
-#define USB_LED_COMPOSE                 3
-#define USB_LED_KANA                    4
-
-
-#ifdef __cplusplus
-extern "C" {
+void eeconfig_init_kb(void) {
+#ifdef BACKLIGHT_ENABLE
+    backlight_enable();
+    backlight_level(5);
 #endif
-
-void led_set(uint8_t usb_led);
-
-#ifdef __cplusplus
+    eeconfig_update_kb(0);
+    eeconfig_init_user();
 }
-#endif
-
-#endif
