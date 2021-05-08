@@ -17,8 +17,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #pragma once
 
 #ifdef OLED_DRIVER_ENABLE
+  #define OLED_IC OLED_IC_SH1106
   #define OLED_DISPLAY_128X64
   #define OLED_TIMEOUT 400000
+  #define OLED_COLUMN_OFFSET 2
+  
 #endif
 
 #ifdef RGB_MATRIX_ENABLE
