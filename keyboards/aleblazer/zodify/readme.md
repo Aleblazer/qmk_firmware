@@ -1,10 +1,8 @@
-# Zodiark-V2 Keyboard
+# Zodify Keyboard
 
-![Zodify](https://i.imgur.com/49O8aowl.jpg)
+![Zodify](https://placehold.jpg)
 
-A split keyboard with 4x7 including a thumbcluster, encoders on each side, per key RGB, and an EZ-VIK connector.
-
-This platform uses dedicated left and right PCBs, [an updated all-in-one Pro Micro footprint](https://github.com/Aleblazer/TheOneProMicro) to take advantage of the extra pins, a VIK connector and using the generic 35 pin RP2040 Pro Micro, and 10 additional underglow LEDs.
+To-do
 
 * Keyboard Maintainer: [Aleblazer](https://github.com/Aleblazer/), [Discord Link](https://discord.gg/BCSbXwskVt)
 * Hardware Supported: Generic 35 pin RP2040 Pro Micro
@@ -12,13 +10,13 @@ This platform uses dedicated left and right PCBs, [an updated all-in-one Pro Mic
 
 Make example for this keyboard (after setting up your build environment):
 
-    make aleblazer/zodiarkv2:default
+    make aleblazer/zodify:default
 
 Flashing example for this keyboard:
 
-    make aleblazer/zodiarkv2:default:flash
+    make aleblazer/zodify:default:flash
 
-Remove TRRS cable from halves, plug into one side, press reset button when asked. Repeat process on the other side.
+Remove USB-C interconnect cable from halves, plug into one side, press reset button when asked. Repeat process on the other side.
 
 See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
 
@@ -27,5 +25,5 @@ See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_to
 Enter the bootloader in 3 ways:
 
 * **BOOT Button**: Hold down the BOOT button on the top of the PCB and plug in the keyboard 
-* **Physical reset button**: Double tap the button RESET on the top of the PCB
-* **Keycode in layout**: Press the key mapped to `QK_BOOT` if it is available
+* **Physical reset button**: Double tap the button RESET on the top of the PCB (This is after the initial firmware flash)
+* **Keycode in layout**: Press the key mapped to `QK_BOOT` if it is available (Matrix point 0,0 after initial firmwareflash)
