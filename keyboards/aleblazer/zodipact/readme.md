@@ -1,11 +1,7 @@
-# ZodiarkPi
-
-![Zodiapact](https://i.imgur.com/iOvyZLMh.jpeg)
-
-WIP (Ignore the picture of the ZodZero)
+# Zodipact
 
 * Keyboard Maintainer: [Aleblazer](https://github.com/Aleblazer/), [Discord Link](https://discord.gg/BCSbXwskVt)
-* Hardware Supported: Raspberry Pi Pico/Waveshare RP2040 Plus
+* Hardware Supported: Waveshare LCD RP2040
 * Hardware Availability: [Split Logic Keyboards](https://splitlogic.xyz/)
 
 ## Make example for this keyboard (after setting up your build environment):
